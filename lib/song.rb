@@ -38,26 +38,25 @@ class Song
   
   def self.genre_count
     ans = {}
-    ans = @@genres.each do |genre|
+    return ans = @@genres.each do |genre|
       if ans[genre] == nil
         ans[genre] = 1
       else
         ans[genre] = ans[genre] + 1
       end    
     end
-    ans
   end
   
   def self.artist_count
     ans = {}
-    ans = @@artists.each do |artist|
+    return @@artists.each do |artist|
       
       if ans[artist] == nil
         ans[artist] = 1
       else
         ans[artist] = ans[artist] + 1
-      end   
+      end
+      
     end
   end
-  ans
 end
