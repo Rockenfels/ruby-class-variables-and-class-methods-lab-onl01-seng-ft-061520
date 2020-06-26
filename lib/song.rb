@@ -40,9 +40,9 @@ class Song
     ans = {}
     ans = @@genres.each do |genre|
       if ans[genre] == nil
-        ans[genre] => 1
+        ans[genre] = 1
       else
-        ans[genre] => ans[genre] + 1
+        ans[genre] = ans[genre] + 1
       end    
     end
     ans
@@ -52,9 +52,9 @@ class Song
     ans = {}
     ans = @@artists.each do |artist|
       if ans[artist] == nil
-        ans[artist] => 1
+        ans[artist] = 1
       else
-        ans[artist] => ans[artist] + 1
+        ans[artist] = ans[artist] + 1
       end    
     end
     ans
