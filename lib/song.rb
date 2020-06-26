@@ -1,10 +1,6 @@
 class Song
-  attr_reader :name, :artist, :genre
+  @@song_count = 0
+  @@artists = []
   
-  COUNT = 0
-  ARTISTS = []
-  
-  def :name=(name)
-    
-  
+  def initialize
 end
