@@ -56,9 +56,10 @@ class Song
         ans[artist] = 1
       else
         ans[artist] = ans[artist] + 1
-      end    
+      end   
+      binding.pry
     end
-    binding.pry
+    
     ans
   end
   
