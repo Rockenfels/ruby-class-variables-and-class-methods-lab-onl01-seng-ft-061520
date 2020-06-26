@@ -20,6 +20,41 @@ class Song
   end
   
   def genres
-    @@genres
+    ans = @@genres.each do |genre|
+      ans << genre if !ans.include?(genre)
+    end
+    ans
   end
+  
+  def artists
+    ans = @@artists.each do |artist|
+      ans << artist if !ans.include?(artist)
+    end
+    ans
+  end
+  
+  def genre_count
+    ans = {}
+    ans = @@genres.each do |genre|
+      if ans[genre] == nil
+        ans[genre] = 1
+      else
+        ans[genre] += 1
+      end    
+    end
+    ans
+  end
+  
+  def artist_count
+    ans = {}
+    ans = @@artists.each do |artist|
+      if ans[artist] == nil
+        ans[artist] = 1
+      else
+        ans[artist] += 1
+      end    
+    end
+    ans
+  end
+  
 end
