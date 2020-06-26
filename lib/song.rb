@@ -20,14 +20,16 @@ class Song
   end
   
   def genres
-    ans = @@genres.each do |genre|
+    ans = []
+    @@genres.each do |genre|
       ans << genre if !ans.include?(genre)
     end
     ans
   end
   
   def artists
-    ans = @@artists.each do |artist|
+    ans = []
+    @@artists.each do |artist|
       ans << artist if !ans.include?(artist)
     end
     ans
