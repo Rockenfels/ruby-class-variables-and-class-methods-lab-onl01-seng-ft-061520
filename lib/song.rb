@@ -16,12 +16,12 @@ class Song
     @genre = genre
   end
   
-  def count
+  def self.count
     @@count
     binding.pry
   end
   
-  def genres
+  def self.genres
     ans = []
     @@genres.each do |genre|
       ans << genre if !ans.include?(genre)
@@ -29,7 +29,7 @@ class Song
     ans
   end
   
-  def artists
+  def self.artists
     ans = []
     @@artists.each do |artist|
       ans << artist if !ans.include?(artist)
@@ -37,7 +37,7 @@ class Song
     ans
   end
   
-  def genre_count
+  def self.genre_count
     ans = {}
     ans = @@genres.each do |genre|
       if ans[genre] == nil
@@ -49,7 +49,7 @@ class Song
     ans
   end
   
-  def artist_count
+  def self.artist_count
     ans = {}
     ans = @@artists.each do |artist|
       if ans[artist] == nil
