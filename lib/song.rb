@@ -50,7 +50,7 @@ class Song
   
   def self.artist_count
     ans = {}
-    ans = @@artists.collect do |artist|
+    ans = @@artists.each do |artist|
       
       if ans[artist] == nil
         ans[artist] = 1
